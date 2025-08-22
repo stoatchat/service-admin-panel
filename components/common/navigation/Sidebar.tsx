@@ -140,7 +140,7 @@ export function Sidebar({
             >
               <Link href="/panel/revolt/inspect">
                 <MagnifyingGlassIcon />
-                Search by ID <Badge color="orange">🚧 WIP</Badge>
+                Search & Inspect
               </Link>
             </Button>
             {modules.advancedPanel && (
