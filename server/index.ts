@@ -1,12 +1,4 @@
-import {
-  bgBlue,
-  bgGreen,
-  bgRed,
-  blue,
-  gray,
-  red,
-  yellow,
-} from "@colors/colors";
+import colors from 'yoctocolors';
 import { config } from "dotenv";
 import { readFile, readdir } from "fs/promises";
 import { createServer } from "http";
@@ -31,23 +23,23 @@ async function printVersion() {
   );
 
   console.log("\n");
-  createLogger(bgBlue(" Revolt "))(`Swiss Army Knife v${version}`);
+  createLogger(colors.blue(" Revolt "))(`Swiss Army Knife v${version}`);
 }
 
 async function loadModules() {
-  const log = createLogger(bgRed(" Modules "));
+  const log = createLogger(colors.red(" Modules "));
   const modules = await readdir(resolve("server/.build/server/modules"));
   log(`Found ${modules.length} modules!`);
 
   for (const moduleName of modules) {
     if (moduleName === "_disabled") continue;
-    log(gray(`Initialising ${moduleName}`));
+    log(colors.gray(`Initialising ${moduleName}`));
     require(resolve(`server/.build/server/modules/${moduleName}/index.js`));
   }
 }
 
 async function startApp() {
-  const log = createLogger(bgGreen(" Web "));
+  const log = createLogger(colors.green(" Web "));
   await app.prepare().then(() => {
     createServer(async (req, res) => {
       try {
@@ -58,7 +50,7 @@ async function startApp() {
 
         await handle(req, res, parsedUrl);
       } catch (err) {
-        log(red(`Error occurred handling ${req.url}: ${err}`));
+        log(colors.red(`Error occurred handling ${req.url}: ${err}`));
         res.statusCode = 500;
         res.end("internal server error");
       }
@@ -69,9 +61,9 @@ async function startApp() {
       })
       .listen(port, () =>
         log(
-          `${gray("Admin Panel is ready on http://")}${blue(hostname)}${gray(
+          `${colors.gray("Admin Panel is ready on http://")}${colors.blue(hostname)}${colors.gray(
             ":",
-          )}${yellow(port.toString())}`,
+          )}${colors.yellow(port.toString())}`,
         ),
       );
   });

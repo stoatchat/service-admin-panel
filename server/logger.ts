@@ -1,4 +1,4 @@
-import { gray } from "@colors/colors";
+import colors from 'yoctocolors';
 
 /**
  * Create a logging function for a module
@@ -7,5 +7,5 @@ import { gray } from "@colors/colors";
  */
 export function createLogger(moduleName: string) {
   return (str: string) =>
-    console.log(`${gray(new Date().toISOString())} ${moduleName} ${str}`);
+    console.log(`${colors.gray(new Date().toISOString())} ${moduleName} ${str}`);
 }
