@@ -1,5 +1,4 @@
 import colors from 'yoctocolors';
-import { config } from "dotenv";
 import { readFile, readdir } from "fs/promises";
 import { createServer } from "http";
 import next from "next";
@@ -7,8 +6,6 @@ import { resolve } from "path";
 import { parse } from "url";
 
 import { createLogger } from "./logger";
-
-config({ path: ".env.local" });
 
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.HOST || "localhost";
