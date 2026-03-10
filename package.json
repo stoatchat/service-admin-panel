@@ -37,8 +37,7 @@
     "revolt.js": "^7.0.0-beta.11",
     "scikitjs": "^1.24.0",
     "string-comparison": "^1.3.0",
-    "ulid": "^2.3.0",
-    "winbox": "^0.2.82"
+    "ulid": "^2.3.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
@@ -47,7 +46,6 @@
     "@types/node-cron": "^3.0.11",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@types/winbox": "^0.2.5",
     "@typescript-eslint/parser": "^7.0.2",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",

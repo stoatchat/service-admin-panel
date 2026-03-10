@@ -1,6 +1,5 @@
 import { ClientAuthProvider } from "@/lib/auth/clientProvider";
 import { ClientQueryProvider } from "@/lib/query/queryProvider";
-import "@/lib/winbox";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "next/head";
@@ -17,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Revolt Admin Panel",
+  title: "Stoat Admin Panel",
   description: "Platform management and moderation tools.",
 };
 

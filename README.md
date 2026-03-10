@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-  Revolt Admin Panel
+  Stoat Admin Panel
   
   [![Stars](https://img.shields.io/github/stars/revoltchat/admin-panel?style=flat-square&logoColor=white)](https://github.com/revoltchat/admin-panel/stargazers)
   [![Forks](https://img.shields.io/github/forks/revoltchat/admin-panel?style=flat-square&logoColor=white)](https://github.com/revoltchat/admin-panel/network/members)
@@ -58,4 +58,4 @@ bun run start
 
 ## License
 
-The Revolt admin panel is generally licensed under the [GNU Affero General Public License v3.0](https://github.com/revoltchat/admin-panel/blob/master/LICENSE).
+The Stoat admin panel is generally licensed under the [GNU Affero General Public License v3.0](https://github.com/revoltchat/admin-panel/blob/master/LICENSE).

@@ -44,7 +44,7 @@ export function LoginButton() {
         })
       }
     >
-      Login with Revolt SSO
+      Login with Stoat SSO
     </Button>
   );
 }

@@ -18,14 +18,14 @@ export default function Home() {
       <Card className="p-4">
         <Flex direction="column" gap="4">
           <Heading as="h1" size="8" className={comicNeue.className}>
-            Revolt Admin Panel
+            Stoat Admin Panel
           </Heading>
 
           <LoginButton />
 
           <Text align="center" size="1">
-            <a href="https://revolt.chat">revolt.chat</a> &middot;{" "}
-            <a href="https://git.is.horse/revolt/research-development/swiss-army-knife">
+            <a href="https://stoat.chat">stoat.chat</a> &middot;{" "}
+            <a href="https://github.com/revoltchat/admin-panel">
               Project Information
             </a>
           </Text>

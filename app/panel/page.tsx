@@ -6,8 +6,8 @@ import { Text } from "@radix-ui/themes";
 import pkg from "../../package.json";
 
 export const metadata: Metadata = {
-  title: "Revolt Dashboard",
-  description: "Integrated RBAC and content moderation tool for Revolt.",
+  title: "Stoat Dashboard",
+  description: "Integrated RBAC and content moderation tool for Stoat.",
 };
 
 export default async function Home() {

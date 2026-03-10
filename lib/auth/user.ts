@@ -9,10 +9,10 @@ type AuthorisedUser = {
 
 export function emailToImage(email: string) {
   return email === "insert@revolt.chat"
-    ? "https://autumn.revolt.chat/avatars/6rgg372gI2LrxCUx0CiA2R1Qs6eTtmC-2NpMq1Xa_3/e4332b6d70619b8a98086e532dbd4b9e.png"
+    ? "https://cdn.stoatusercontent.com/avatars/6rgg372gI2LrxCUx0CiA2R1Qs6eTtmC-2NpMq1Xa_3/e4332b6d70619b8a98086e532dbd4b9e.png"
     : email === "tom@revolt.chat"
-      ? "https://autumn.revolt.chat/avatars/gXhOXC82uHPk2EtWe0cvcE1Du7h1rjKFOhFcvqxKHp?max_side=256"
-      : "https://autumn.revolt.chat/avatars/pYjK-QyMv92hy8GUM-b4IK1DMzYILys9s114khzzKY";
+      ? "https://cdn.stoatusercontent.com/avatars/gXhOXC82uHPk2EtWe0cvcE1Du7h1rjKFOhFcvqxKHp?max_side=256"
+      : "https://cdn.stoatusercontent.com/avatars/pYjK-QyMv92hy8GUM-b4IK1DMzYILys9s114khzzKY";
 }
 
 /**

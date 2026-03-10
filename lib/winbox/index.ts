@@ -1,3 +1,0 @@
-"use client";
-
-import "winbox";

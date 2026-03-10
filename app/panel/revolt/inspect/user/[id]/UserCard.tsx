@@ -39,8 +39,8 @@ export function UserCard({
             size="3"
             src={
               user.avatar
-                ? `https://autumn.revolt.chat/avatars/${user.avatar?._id}`
-                : `https://api.revolt.chat/users/${user._id}/default_avatar`
+                ? `https://cdn.stoatusercontent.com//avatars/${user.avatar?._id}`
+                : `https://https://api.stoat.chat//users/${user._id}/default_avatar`
             }
             fallback={user.username.substring(0, 1)}
           />
