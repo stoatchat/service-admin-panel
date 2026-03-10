@@ -4,16 +4,13 @@
 	update = none
 [submodule "server/modules/global-helper-bot"]
 	path = server/modules/global-helper-bot
-	url = https://github.com/revoltchat/admin-panel-global-helper-bot.git
+	url = https://github.com/stoatchat/service-admin-panel-global-helper-bot.git
 [submodule "server/modules/discover-rankings"]
 	path = server/modules/discover-rankings
-	url = https://git.is.horse/revolt/research-development/discover-rankings-module
-	update = none
+	url = https://github.com/stoatchat/service-admin-panel-discover-rankings.git
 [submodule "app/panel/hr"]
 	path = app/panel/hr
-	url = https://github.com/revoltchat/admin-panel-hr.git
-	update = none
+	url = https://github.com/stoatchat/service-admin-panel-hr.git
 [submodule "app/panel/mod"]
 	path = app/panel/mod
-	url = https://github.com/revoltchat/admin-panel-moderation.git
-	update = none
+	url = https://github.com/stoatchat/service-admin-panel-moderation.git
