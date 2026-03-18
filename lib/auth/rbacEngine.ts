@@ -18,16 +18,19 @@ export async function flattenPermissionsFor(
   return roles.flatMap((role) => role.permissions);
 }
 
-export function checkPermission(permissions: string[], permission: string) {
+export function checkAnyPermission(permissions: string[], requested_permissions: string[]) {
   if (permissions.includes("*")) return true;
 
-  const segments = permission.split(".");
-  while (segments.length) {
-    if (permissions.includes(segments.join("."))) {
-      return true;
-    }
+  for(let i=0; i<permissions.length; i++){
+    const permission = permissions[i];
+    const segments = permission.split(".");
+    while (segments.length) {
+      if (permissions.includes(segments.join("."))) {
+        return true;
+      }
 
-    segments.pop();
+      segments.pop();
+    }
   }
 
   return false;
